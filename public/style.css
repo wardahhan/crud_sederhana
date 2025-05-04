@@ -1,0 +1,201 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f6f9;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Container Styling */
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Forms Styling */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e6e6e6;
+}
+
+/* Form Heading */
+form h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Input Fields */
+form input[type="text"], 
+form input[type="number"], 
+form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px 15px;
+    border: 1px solid #d6d6d6;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+form input:focus, 
+form textarea:focus {
+    border-color: #3e648d;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 5px rgba(96, 168, 245, 0.5);
+    outline: none;
+}
+
+/* Textarea Styling */
+textarea {
+    resize: none;
+    height: 120px;
+}
+
+/* Buttons */
+form button {
+    display: block;
+    width: 100%;
+    background-color: #538dca;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #386697;
+}
+
+/* Alerts */
+.alert-success, .alert-danger {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.alert-success {
+    background-color: #e9f7e9;
+    color: #2b542c;
+    border: 1px solid #c7e1c7;
+}
+
+.alert-danger {
+    background-color: #fbe4e4;
+    color: #b94a48;
+    border: 1px solid #ebcccc;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+table th, table td {
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    text-align: left;
+    vertical-align: middle;
+}
+
+table th {
+    background-color: #27323e;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Buttons for Actions */
+.btn-edit {
+    display: inline-block;
+    background-color: #f0ad4e;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-edit:hover {
+    background-color: #ec971f;
+}
+
+.btn-delete {
+    display: inline-block;
+    background-color: #d9534f;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-delete:hover {
+    background-color: #c9302c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    form {
+        padding: 15px 20px;
+    }
+
+    form h1 {
+        font-size: 20px;
+    }
+
+    form button {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+}
